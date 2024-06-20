@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="RoutePlanningTableViewCell" customModule="iosExercise_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="407" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="RoutePlanningTableViewCell" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="407" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dS2-zT-C4S">
+                        <rect key="frame" x="8" y="0.0" width="391" height="64"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usm-cQ-UnN">
+                                <rect key="frame" x="0.0" y="0.0" width="91.666666666666671" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myZ-9S-fux">
+                                        <rect key="frame" x="10" y="10" width="71.666666666666671" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEx-jX-A9Z">
+                                                <rect key="frame" x="15.333333333333332" y="22" width="41.333333333333343" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="方向" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="190-kY-2zu">
+                                                <rect key="frame" x="18.666666666666668" y="2" width="34.666666666666657" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90980392156862744" green="0.52156862745098043" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="190-kY-2zu" firstAttribute="centerX" secondItem="myZ-9S-fux" secondAttribute="centerX" id="0Lj-Ai-um3"/>
+                                            <constraint firstItem="VEx-jX-A9Z" firstAttribute="centerX" secondItem="myZ-9S-fux" secondAttribute="centerX" id="BVq-w1-tYF"/>
+                                            <constraint firstItem="VEx-jX-A9Z" firstAttribute="centerY" secondItem="myZ-9S-fux" secondAttribute="centerY" constant="10" id="m5w-SP-g8B"/>
+                                            <constraint firstItem="190-kY-2zu" firstAttribute="centerY" secondItem="myZ-9S-fux" secondAttribute="centerY" constant="-10" id="tsU-1r-DO2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="myZ-9S-fux" firstAttribute="leading" secondItem="usm-cQ-UnN" secondAttribute="leading" constant="10" id="Ahb-E5-yAc"/>
+                                    <constraint firstItem="myZ-9S-fux" firstAttribute="top" secondItem="usm-cQ-UnN" secondAttribute="top" constant="10" id="Yae-Hc-rsP"/>
+                                    <constraint firstAttribute="trailing" secondItem="myZ-9S-fux" secondAttribute="trailing" constant="10" id="mkf-nx-XRl"/>
+                                    <constraint firstAttribute="bottom" secondItem="myZ-9S-fux" secondAttribute="bottom" constant="10" id="uv5-gK-qem"/>
+                                    <constraint firstAttribute="width" secondItem="usm-cQ-UnN" secondAttribute="height" multiplier="1:1" id="vhM-AC-kQl"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkj-aS-ivZ">
+                                <rect key="frame" x="99.666666666666686" y="0.0" width="92" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="00分鐘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsg-qb-uut">
+                                <rect key="frame" x="199.66666666666666" y="0.0" width="91.666666666666657" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hz-f6-k3a">
+                                <rect key="frame" x="299.33333333333331" y="0.0" width="91.666666666666686" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dS2-zT-C4S" secondAttribute="trailing" constant="8" id="HLG-tE-Sox"/>
+                    <constraint firstAttribute="bottom" secondItem="dS2-zT-C4S" secondAttribute="bottom" id="R7r-6p-kpZ"/>
+                    <constraint firstItem="dS2-zT-C4S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ejI-rM-fUa"/>
+                    <constraint firstItem="dS2-zT-C4S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="gX2-cw-532"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="destinationArrivalTime" destination="5Hz-f6-k3a" id="VYy-hn-8xx"/>
+                <outlet property="direction" destination="190-kY-2zu" id="uoG-Pb-9Md"/>
+                <outlet property="directionAndNo" destination="myZ-9S-fux" id="G3R-5J-5aX"/>
+                <outlet property="driveTime" destination="Vsg-qb-uut" id="Rp0-4W-fCx"/>
+                <outlet property="originDepartureTime" destination="jkj-aS-ivZ" id="u9P-mc-vRb"/>
+                <outlet property="trainNo" destination="VEx-jX-A9Z" id="vwR-6e-fdc"/>
+            </connections>
+            <point key="canvasLocation" x="196.18320610687022" y="2.1126760563380285"/>
+        </tableViewCell>
+    </objects>
+</document>
